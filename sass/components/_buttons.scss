@@ -1,0 +1,13 @@
+@use '../abstracts/abstracts' as *;
+
+.button {
+    width: 240px;
+    height: 60px;
+    padding: 0 32px;
+    background-color: $pink;
+    color: $white;
+    border-radius: 16px 16px 16px 0;
+    padding: 16px 69px 17px 68px;
+    font-size: 18px;
+    font-weight: 400;
+}

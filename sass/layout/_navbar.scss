@@ -1,0 +1,37 @@
+@use '../abstracts/abstracts' as *;
+
+.nav {
+    &__list {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        
+    }
+
+    &__link {
+        position: relative;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: normal;
+        color: $grey;
+        padding-bottom: 20px;
+        &:hover {
+            color: $white;
+        }
+
+        &--active {
+            color: $white;
+
+            &::before {
+                content: "";
+                position: absolute;
+                background-color: $pink;
+                left: 0;
+                bottom: 10px;
+                width: 28px;
+                height: 3px;
+                border-radius: 6px;
+            }
+        }
+    }
+}

@@ -1,0 +1,119 @@
+@use '../abstracts/abstracts' as *;
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    &__container {
+        position: relative;
+        min-height: 780px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+    &__content{
+        position: relative;
+        padding-top: 20px;
+        z-index: 5;
+    }
+    &__title {
+        max-width: 670px;
+        margin-bottom: 28px;
+        font-family: Merriweather;
+        font-size: 75px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    &__text {
+        max-width: 610px;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+        color: $grey;
+        margin-bottom: 24px;
+    }
+    &__actions {
+        display: flex;
+        align-items: center;
+        gap: 36px;
+        margin-bottom: 40px;
+    }
+    &__learn-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 14px;
+        color: $white;
+        text-decoration: underline;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__learn-arrow {
+        width: 40px;
+        height: 40px;
+    }    
+    &__visual {
+        position: relative;
+        z-index: 2;
+        width: 720px;
+        height: 680px;
+        flex-shrink: 0;
+    }
+    &__circle {
+        position: absolute;
+        border: 1px solid $grey;
+        &--one {
+            width: 550px;
+            height: 550px;
+            top: 220px;
+            left: 190px;
+            border-radius: 550px;
+        
+        }
+        &--two {
+            width: 800px;
+            height: 800px;
+            top: 60px;
+            left: 10px;
+            border-radius: 800px;
+        }    
+    }
+    &-features {
+        max-width: 590px;
+        display: flex;
+        align-items: center;
+        gap: 48px;
+        padding-top: 30px;
+        &__item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        &__icon {
+            flex: 0 0 60px;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            background-color: Gray;
+            border-radius: 16px;
+            margin: 0;
+
+            img {
+                width: 50px;
+                height: 50px;
+                object-fit: contain;
+            }
+        }
+        &__title {
+            margin: 0;
+            font-size: 18px;
+            color: $white;
+            font-weight: 400;
+            line-height: normal;
+        }
+    }
+}

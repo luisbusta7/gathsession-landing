@@ -1,0 +1,55 @@
+@use '../abstracts/abstracts' as *;
+
+.people-card {
+    position: absolute;
+    overflow: hidden;
+    @include flex-center();
+    border-radius: $radius-large;
+
+    &__image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+
+    &--large {
+        width: 180px;
+        height: 400px;
+    }
+
+    &--small {
+        width: 180px;
+        height: 180px;
+    }
+
+    &--purple {
+        top: 0px;
+        left: 10px;
+        background-color: $purple;
+    }
+
+    &--cyan {
+        top: 0px;
+        left: 215px;
+        background-color: $blue;
+    }
+
+    &--orange {
+        top: 200px;
+        left: 215px;
+        background-color: $orange;
+    }
+
+    &--pink {
+        top: 420px;
+        left: 10px;
+        background-color: $pink;
+    }
+
+    &--yellow {
+        top: 110px;
+        left: 420px;
+        background-color: $yellow;
+    }
+}

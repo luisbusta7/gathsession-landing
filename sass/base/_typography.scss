@@ -1,0 +1,17 @@
+@use '../abstracts/abstracts' as *;
+
+body {
+    font-family: $primary-font;
+    background-color: $black;
+}
+
+h1 {
+    font-family: $secondary-font;
+    color: $white;
+}
+
+h1, h2, h3, p {
+    margin-top: 0;
+}
+
+
